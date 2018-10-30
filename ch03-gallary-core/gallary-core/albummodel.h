@@ -13,12 +13,12 @@
 class GALLARYCORESHARED_EXPORT AlbumModel : public QAbstractListModel
 {
     Q_OBJECT
-
+public:
     enum Roles {
             IdRole = Qt::UserRole + 1,
             NameRole,
         };
-public:
+
     explicit AlbumModel(QObject *parent = nullptr);
     QModelIndex addAlbum(const Album& album);
 
